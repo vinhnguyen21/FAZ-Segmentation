@@ -1,0 +1,22 @@
+{
+  "net_type": "Se_resnet50",
+  "pretrained": true ,
+  "weight_path": null,
+  "train_folder" : "../dataset/train/raw",
+  "valid_folder" : "../dataset/valid/raw",
+  "test_folder" : "../dataset/test/raw",
+  "classes": 1,
+  "model_path": "./models",
+  "size": 256,
+  "thresh_hold": 0.6,
+  "epoch": 70,
+  "lr": 0.0002,
+  "factor": 0.1,
+  "patience": 10,
+  "step_size": 5,
+  "loss": "BCE-loss",
+  "batch_size": 2,
+  "gamma": 2,
+  "grad_param_index": 338,
+  "grad_final_conv": "layer4"
+}
