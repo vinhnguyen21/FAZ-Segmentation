@@ -1,7 +1,41 @@
 # FAZ-Segmentation
-Building Unet architecture for Foveal Avascular Zone Extraction
+Combine Hessian Filter and UNet for Foveal Avascular Zone Extraction
 
-# Prepare dataset folder
+
+![link to Google!] (https://drive.google.com/file/d/1vPlOGi1sBtjhKNpXrwNoM7U5wR7ffcew/view?usp=sharing)
+# Docker Installation for FLask App
+
+
+1. Build and run docker on port 2001
+```
+$ ./docker-build.sh
+
+```
+If getting error in permission
+```
+$ chmod u+x ./docker-build.sh
+
+```
+2. I have already mounted /AWS-web-app/app/static/images to /images of docker, so to test we will prepare image in:
+```
+├   ├── images
+|       ├── raw
+|           ├── 1.tif
+|       ├── predict
+|           ├── 1.png
+```
+*  We will put raw image in /images/raw
+*  In postman: 
+    * url: http://localhost:2001/faz/predict
+    * METHOD: GET
+    * Params: 
+        * Key: id
+        * value: name of image such as 1.tif
+* You will have the prediction of model at /images/predict
+
+# Training process
+
+## Prepare dataset folder
 ```
 ├── train
 |   ├── raw 
@@ -25,13 +59,13 @@ Building Unet architecture for Foveal Avascular Zone Extraction
 |       ├── image1.png
 |       ├── ...
 ```
-# Setup Environment
+
+## Setup Environment
 Run this script to create a virtual environment and install dependency libraries
 1.  $conda create -n name_environment python=3.6
 2.  $conda activate name_environment
 3.  $pip install -r requirements-2.txt
 
-# Training process
 To train this project, we just run the command
 ```
 $python train.py
