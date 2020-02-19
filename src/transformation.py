@@ -65,3 +65,10 @@ def inference_transformation(image, mask, size):
 #     mask = torch.ByteTensor(np.array(mask))
     return image, mask
 
+def tensor_transform(image, size):
+    tensor_transforms = transforms.Compose([
+        transforms.Resize((size, size)),
+        transforms.ToTensor()
+    ])
+
+    return tensor_transforms(image)
