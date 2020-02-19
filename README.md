@@ -2,7 +2,7 @@
 Combine Hessian Filter and UNet for Foveal Avascular Zone Extraction
 
 
-![link to Google!] (https://drive.google.com/file/d/1vPlOGi1sBtjhKNpXrwNoM7U5wR7ffcew/view?usp=sharing)
+![alt text](https://drive.google.com/file/d/1vPlOGi1sBtjhKNpXrwNoM7U5wR7ffcew/view?usp=sharing)
 # Docker Installation for FLask App
 
 
