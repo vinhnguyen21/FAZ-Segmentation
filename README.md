@@ -1,5 +1,6 @@
 # FAZ-Segmentation
 Combine Hessian Filter and UNet for Foveal Avascular Zone Extraction
+![picture](pictures/github_FAZ.png)
 
 # Docker Installation for FLask App
 
