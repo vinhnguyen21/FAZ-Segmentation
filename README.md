@@ -15,7 +15,7 @@ If getting error in permission
 $ chmod u+x ./docker-build.sh
 
 ```
-2. I have already mounted /AWS-web-app/app/static/images to /images of docker, so to test we will prepare image in:
+2. I have already mounted /images to /images of docker, so to test we will prepare image in:
 ```
 ├   ├── images
 |       ├── raw
