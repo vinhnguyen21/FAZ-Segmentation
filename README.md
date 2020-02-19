@@ -32,6 +32,8 @@ $ chmod u+x ./docker-build.sh
         * value: name of image such as 1.tif
 * You will have the prediction of model at /images/predict
 
+![picture](pictures/output.png)
+
 # Training process
 
 ## Prepare dataset folder
