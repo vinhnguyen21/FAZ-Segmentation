@@ -20,7 +20,7 @@ class FAZ_Classifier():
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         
         if model_type:
-            self.model = get_torchvision_model(model_type, True, 1, None)
+            self.model = get_torchvision_model(model_type, False, 1, None)
 
         if weight_path is not None:
             state_dict = torch.load(weight_path, map_location = self.device)
