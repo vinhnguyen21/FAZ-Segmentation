@@ -1,4 +1,5 @@
 CWD=$(pwd)
+mkdir "${CWD}/images"
 CWD="${CWD}/images"
 
 docker build -t asia.gcr.io/a2ds-235802/faz-segmentation:latest -f ./docker/Dockerfile .

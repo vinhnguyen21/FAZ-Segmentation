@@ -11,8 +11,8 @@ COPY download_model.py /download_model.py
 RUN pip install iterative-stratification==0.1.6 \ 
                 numpy==1.16.0 \
                 Pillow==6.2.0 \
-                torch==1.4.0 \
-                torchvision==0.5.0 \
+                torch==1.3.0 \
+                torchvision==0.4.1 \
                 pandas==0.25.1 \
                 imgaug==0.3.0 \
                 scikit-learn==0.19.0 \
