@@ -1,7 +1,7 @@
 CWD=$(pwd)
-mkdir "${CWD}/images"
-mkdir "${CWD}/images/raw"
-mkdir "${CWD}/images/predict"
+# mkdir "${CWD}/images"
+# mkdir "${CWD}/images/raw"
+# mkdir "${CWD}/images/predict"
 CWD="${CWD}/images"
 
 docker build -t asia.gcr.io/a2ds-235802/faz-segmentation:latest -f ./docker/Dockerfile .
