@@ -29,7 +29,7 @@ $ chmod u+x ./docker-build.sh
     * METHOD: GET
     * Params: 
         * Key: id
-        * value: name of image such as 1.tif
+        * value: name of image such as 1.png
 * You will have the prediction of model at /images/predict
 
 ![picture](pictures/output.png)
