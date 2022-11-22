@@ -6,6 +6,6 @@ torchvision==0.4.1
 pandas==0.25.1
 imgaug==0.3.0
 scikit-learn==0.19.0
-opencv-python==4.1.1.26
+opencv-python==4.2.0.32
 efficientnet-pytorch==0.5.0
 tqdm==4.40.2
